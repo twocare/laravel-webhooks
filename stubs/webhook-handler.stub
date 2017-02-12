@@ -5,7 +5,7 @@ namespace DummyNamespace;
 use Craftware\Webhooks\Webhook;
 use Craftware\Webhooks\Handler\WebhooksHandler;
 
-class DummyClass extends WeebhookHandler
+class DummyClass extends WebhookHandler
 {
     /**
      * Create the webhook listener.
