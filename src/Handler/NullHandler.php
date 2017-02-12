@@ -7,24 +7,24 @@ use Craftware\Webhooks\Handler\WebhooksHandler;
 
 class NullHandler extends WeebhookHandler
 {
-	/**
-	 * Create the webhook listener.
-	 *
-	 * @return void
-	 */
-	public function __construct()
-	{
-		//
-	}
+    /**
+     * Create the webhook listener.
+     *
+     * @return void
+     */
+    public function __construct()
+    {
+        //
+    }
 
-	/**
-	 * Handle the received webhook.
-	 *
-	 * @param  ReceivedWebhook $webhook
-	 * @return void
-	 */
-	public function handle(Weebhook $webhook)
-	{
-		// Access the webhook using $webhook...
-	}
+    /**
+     * Handle the received webhook.
+     *
+     * @param  ReceivedWebhook $webhook
+     * @return void
+     */
+    public function handle(Weebhook $webhook)
+    {
+        // Access the webhook using $webhook...
+    }
 }

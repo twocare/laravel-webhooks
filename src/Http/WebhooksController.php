@@ -8,8 +8,8 @@ use Craftware\Webhooks\Handler\WebhookDispatcher;
 
 class WebhooksController extends Controller
 {
-	public function store(Request $request, $name, $key = false)
-	{
-		return (new WebhookDispatcher($request, $name, $key))->run();
-	}
+    public function store(Request $request, $name, $key = false)
+    {
+        return (new WebhookDispatcher($request, $name, $key))->run();
+    }
 }
