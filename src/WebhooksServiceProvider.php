@@ -16,7 +16,6 @@ class WebhooksServiceProvider extends ServiceProvider
 	public function boot()
 	{
 		$this->publishConfig();
-		$this->publishMigrations();
 	}
 
 	/**
@@ -55,20 +54,6 @@ class WebhooksServiceProvider extends ServiceProvider
 		$this->publishes([
 			__DIR__.'/../config/webhooks.php' => config_path('webhooks.php'),
 		], 'config');
-	}
-
-	/**
-	 * Publishes migrations files
-	 *
-	 * @return void
-	 */
-	protected function publishMigrations()
-	{
-		if ( ! class_exists(CreateWebhooksTables::class)) {
-			$this->publishes([
-				__DIR__.'/../migrations/0000_00_00_000000_create_webhooks_tables.php' => database_path('migrations/'.date('Y_m_d_His').'_create_webhooks_tables.php'),
-			], 'migrations');
-		}
 	}
 
 	/**
