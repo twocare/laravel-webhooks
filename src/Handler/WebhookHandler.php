@@ -57,7 +57,6 @@ abstract class WebhookHandler
      */
     protected function logRequest(Webhook $webhook)
     {
-        dd($webhook->getName());
         Log::debug("A call for the {$webhook->getName()} webhook was received", $webhook->toArray());
     }
 }
