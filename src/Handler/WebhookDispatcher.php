@@ -3,6 +3,7 @@
 namespace Craftware\Webhooks\Handler;
 
 use App;
+use Exception;
 use Illuminate\Http\Request;
 use Craftware\Webhooks\Webhook;
 
